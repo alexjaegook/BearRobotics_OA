@@ -46,4 +46,4 @@ This code is structured to facilitate future integrations, including:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/alexjaegook/BearRobotics_OA.git
