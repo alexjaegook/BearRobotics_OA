@@ -1,4 +1,4 @@
-import Account
+from Account import Account
 
 class BankSystem:
     def __init__(self) -> None:
@@ -18,5 +18,5 @@ class BankSystem:
     def verify_pin(self, card_number: str, pin: str) -> bool:
         return self.accounts.get(card_number, {}).get("pin") == pin
 
-    def get_accounts(self, card_number: str) -> dict(str, dict(str, Account)):
+    def get_accounts(self, card_number: str):
         return self.accounts.get(card_number, {})
