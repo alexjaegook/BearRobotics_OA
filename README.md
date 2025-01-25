@@ -2,12 +2,6 @@
 
 This project implements a simple ATM controller system. The controller facilitates basic ATM operations, including inserting a card, verifying a PIN, selecting an account, and performing transactions such as viewing balance, depositing, and withdrawing funds.
 
-## Overview
-
-The controller simulates the core functionalities of an ATM system. Although it does not integrate with a real bank or ATM hardware, it is designed with future integration in mind. The focus of this implementation is on the logical flow and testing of the ATM controller.
-
----
-
 ## Features
 
 - **Card Insertion:** Simulates the insertion of an ATM card.
@@ -35,7 +29,7 @@ This code is structured to facilitate future integrations, including:
 
 - **Classes:**
   - `ATMController`: Handles the flow and operations of the ATM.
-  - `BankAPI`: Simulates a bank API for PIN verification and account management.
+  - `BankSystem`: Simulates a bank API for PIN verification and account management.
   - `Account`: Represents individual user accounts.
 
 - **Testing:** The controller includes unit tests for validating its core functionalities without relying on external systems.
