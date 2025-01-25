@@ -1,6 +1,4 @@
-# BearRobotics_OA
-
-# Simple ATM Controller
+# BearRobotics_OA Simple ATM Controller
 
 This project implements a simple ATM controller system. The controller facilitates basic ATM operations, including inserting a card, verifying a PIN, selecting an account, and performing transactions such as viewing balance, depositing, and withdrawing funds.
 
