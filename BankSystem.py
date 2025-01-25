@@ -5,6 +5,7 @@ class BankSystem:
         # Have a card number associated with the Account
         # Key: Card Number
         # Value: The Accounts associated with the card
+        # TODO: To add more accounts, add here!
         self.accounts = {
             "1234567": {
                 "pin": "1234",
