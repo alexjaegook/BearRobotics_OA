@@ -7,15 +7,16 @@ class BankSystem:
         # Value: The Accounts associated with the card
         self.accounts = {
             "1234567": {
-                "checking" : Account("4567", "checking", "1234", 1000),
-                "saving" : Account("09987", "saving", "1234", 1500)
+                "pin": "1234",
+                "accounts": {
+                    "checking": Account("0000", "checking", 1000),
+                    "savings": Account("0001", "savings", 1500),
+                },
             }
         }
 
     def verify_pin(self, card_number: str, pin: str) -> bool:
-        account = self.accounts.get(card_number, {})
-
-        return any(account.verify_pin(pin) for account in accout.values())
+        return self.accounts.get(card_number, {}).get("pin") == pin
 
     def get_accounts(self, card_number: str) -> dict(str, dict(str, Account)):
         return self.accounts.get(card_number, {})
