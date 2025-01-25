@@ -41,3 +41,4 @@ This code is structured to facilitate future integrations, including:
 1. Clone the repository:
    ```bash
    git clone https://github.com/alexjaegook/BearRobotics_OA.git
+2. Go to `main.py` and add the simulations that you'd like to use.
